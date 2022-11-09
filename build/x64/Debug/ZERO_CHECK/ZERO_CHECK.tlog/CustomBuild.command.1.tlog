@@ -1,0 +1,10 @@
+^D:\STUDY\VS_CODE PROJECTS\PROJECT1\BUILD\CMAKEFILES\7ABB791FD0B6877999D5926C830A1F9C\GENERATE.STAMP.RULE
+setlocal
+D:\Programms\CMake\bin\cmake.exe "-SD:/Study/VS_Code Projects/Project1" "-BD:/Study/VS_Code Projects/Project1/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/Study/VS_Code Projects/Project1/build/test_example.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
